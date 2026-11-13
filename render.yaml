@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: phonemore-test
+    runtime: python
+    plan: free
+    buildCommand: "echo No dependencies"
+    startCommand: "python server.py"
+    envVars:
+      - key: PHONEMORE_TEST_ADMIN_TOKEN
+        generateValue: true
